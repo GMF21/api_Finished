@@ -74,7 +74,7 @@ if(isset($_GET['acao']) && $_GET['acao'] == "download") {
     header("Content-Disposition: attachment; filename=\"" . basename($caminho) . "\"");
     header("Content-Length: " . filesize($caminho));
 
-    readfile($caminho);
+    readfile($caminho);//dados
     exit;
 }
 
